@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(15, 23, 42, 0.9);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #38bdf8;
+  color: #000;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section {
+  padding: 80px 10%;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #38bdf8;
+}
+
+.skills-grid, .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.skills-grid div, .card {
+  background: #020617;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.skills-grid div:hover, .card:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
